@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychomotor Vigilance Task</title>
+    <style>
+        /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0; /* Light grey background */
+        }
+
+        #pvt-container {
+            text-align: center;
+        }
+
+        #startButton, #stimulus {
+            padding: 10px 20px;
+            font-size: 24px;
+            color: #ffffff; /* White text */
+            background-color: #007bff; /* Blue background */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0; /* Spacing around the button and stimulus */
+            display: inline-block;
+        }
+
+        #stimulus {
+            display: none; /* Hidden by default, shown during the task */
+        }
+
+        #startMessage, #endMessage {
+            font-size: 20px;
+            color: #333333; /* Dark grey text */
+            margin-bottom: 20px;
+        }
+
+        /* Hidden by default, visible at the start and end of the task */
+        #startMessage, #endMessage {
+            display: none;
+        }
+
+        /* Additional styling can be added as needed */
+    </style>
+</head>
+<body>
+    <div id="pvt-container">
+        <div id="startMessage">You will now begin the test. Click "Start Task" when you're ready.</div>
+        <button id="startButton">Start Task</button>
+        <div id="stimulus">Click!</div>
+        <div id="endMessage">Thank you for participating. You will be redirected in 30 seconds.</div>
+    </div>
+
+    <script src="PVT.js"></script>
+</body>
+</html>
